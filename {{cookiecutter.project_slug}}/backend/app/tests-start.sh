@@ -3,4 +3,4 @@ set -e
 
 python /app/app/tests_pre_start.py
 
-pytest $* /app/app/tests/
+pytest --cov=/app/app --cov-report=term-missing:skip-covered $* /app/app/tests/
